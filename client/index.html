@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaPipe Hand Tracking with Three.js</title>
+    <style>
+        body { margin: 0; }
+        canvas { display: block; }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display:block;
+            color: white;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+    <div id="info">Loading Assets...</div>
+
+    <!-- Hidden image elements for the script to load textures from -->
+    <img class="galaxy-image" id="image-meiguihua" src="image/meiguihua.png" style="display: none;" />
+    <img class="galaxy-image" id="image-xingxi" src="image/xingxi.png" style="display: none;" />
+    <img class="galaxy-image" id="image-yonghunule" src="image/yonghunule.png" style="display: none;" />
+    <img class="galaxy-image" id="image-zhizhi" src="image/zhizhi.png" style="display: none;" />
+
+    <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+  <script type="module" src="main.js"></script>
+</body>
+</html>
